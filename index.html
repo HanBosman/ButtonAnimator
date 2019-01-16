@@ -3,8 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>JS library</title>
+    <script src="js/main.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="test">Dit is een test!</div>
+    <div class="box">
+      <div class="bounce" style="margin-left: 0px; margin-top: 260.74px;">
+          Example
+      </div>
+      <div class="bounce2" style="margin-left: 0px; margin-top: 211.01px;">
+            Example2
+      </div>
+    </div>
+    <script>
+        var bounce = new Bounce();
+        bounce.init();
+        var  bounce2 = new Bounce();
+        bounce2.init('.bounce2', {gravity: 5});
+    </script>
   </body>
 </html>
