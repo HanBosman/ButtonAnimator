@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>JS library</title>
-    <script src="js/main.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="box">
-      <div class="bounce" style="margin-left: 0px; margin-top: 260.74px;">
-          Example
-      </div>
-      <div class="bounce2" style="margin-left: 0px; margin-top: 211.01px;">
-            Example2
-      </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+
+    <title>Simple Library</title>
+</head>
+<body>
+<section>
+
+    <div class="block" >
+        <p>BLOKJE</p>
     </div>
-    <script>
-        var bounce = new Bounce();
-        bounce.init();
-        var  bounce2 = new Bounce();
-        bounce2.init('.bounce2', {gravity: 5});
-    </script>
-  </body>
+    <div class="block" >
+        <p>BLOKJE</p>
+    </div>
+
+</section>
+
+
+</body>
+<script type="application/javascript" src="js/moveAni.js"></script>
+<script>
+
+    (function (moveAni) {
+        window.onload = function () {
+            // moveAni.clickColor("red");
+            moveAni.clickMargin("150px");  
+            moveAni.design("15vw","15vw","Green","White");
+        }
+    }(moveAni(".block")))
+
+</script>
+
+
+
 </html>
