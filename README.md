@@ -61,4 +61,3 @@ Het is mogelijk om parameters naar eigen wens te veranderen.
 
 
 ## Demo
-http://i338485.iris.fhict.nl/OwnLibrary/index.html
