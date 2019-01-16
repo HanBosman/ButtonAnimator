@@ -1,18 +1,26 @@
-function $(selector){
-    var self = {};
-    self.selector = selector;
-    self.element = document.querySelector(self.selector);
+var Module = (function () {
 
-    self.html = function(){
-        return self.element;
-    }
-    self.attr = function(name,value){
-        if(!value) return self.element.getAttribute(name)
-        self.element.setAttribute(name,value);
-        return self;
-    }
-    self.on = function(type,callback){
-        self.element.onclick = callback;
-    }
-    return self;
-}
+  var knop1 = function () {
+    // do something
+  };
+
+  var knop2 = function () {
+    // do something
+  };
+
+  var knop3 = function () {
+    // do something
+  };
+
+  var knop4 = function () {
+    // do something
+  };
+
+  return {
+    knop1:Knop1,
+    knop2:Knop2,
+    knop3:Knop3,
+    knop4:Knop4
+  }
+
+})();
